@@ -1,53 +1,37 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Newtonsoft.Json;
-using RestaurantApi.CommandHandlers;
-using RestaurantApi.Services;
+using MediatR;
+using RestaurantIntegrationGrpc.Command;
+using RestaurantIntegrationGrpc.Domain;
+using RestaurantIntegrationGrpc.Services;
+using Sms.Test;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Настройка Basic Authentication
-builder.Services.AddAuthentication("BasicAuthentication")
-    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+// Регистрация MediatR
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
-// Добавление контроллеров с настройкой JSON
-builder.Services.AddControllers()
-    .AddNewtonsoftJson(options =>
-    {
-        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-        options.SerializerSettings.Formatting = Formatting.None;
-        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-    });
+builder.Services.AddScoped<RestaurantIntegrationGrpc.Domain.IMenuRepository, MenuRepository>();
 
-// Регистрация сервисов
-builder.Services.AddSingleton<IDataService, DynamicDataService>();
-builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddScoped<IRequestHandler<GetMenuQuery, Sms.Test.GetMenuResponse>, GetMenuQueryHandler>();
 
-// Настройка CORS
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
-});
+
+// Регистрация gRPC
+builder.Services.AddGrpc();
+
+builder.Services.AddGrpcReflection();
+
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();
+    app.MapGrpcReflectionService();
 }
 
-app.UseHttpsRedirection();
-app.UseCors("AllowAll");
-app.UseAuthentication();
-app.UseAuthorization();
+// Включите gRPC-Web
+app.UseGrpcWeb();
 
-app.MapControllers();
+// Маппинг gRPC сервиса
+app.MapGrpcService<SmsTestGrpcService>().EnableGrpcWeb();
 
 app.Run();
