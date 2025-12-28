@@ -1,0 +1,12 @@
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\bin\Debug\net8.0\RestaurantLibrary.deps.json
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\bin\Debug\net8.0\RestaurantLibrary.dll
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\bin\Debug\net8.0\RestaurantLibrary.pdb
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.csproj.AssemblyReference.cache
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.AssemblyInfoInputs.cache
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.AssemblyInfo.cs
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.csproj.CoreCompileInputs.cache
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.dll
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\refint\RestaurantLibrary.dll
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\RestaurantLibrary.pdb
+D:\EmployeeTests\RestaurantApi\RestaurantLibrary\obj\Debug\net8.0\ref\RestaurantLibrary.dll
