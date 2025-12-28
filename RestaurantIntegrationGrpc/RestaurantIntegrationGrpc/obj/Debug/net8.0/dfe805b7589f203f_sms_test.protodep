@@ -1,0 +1,3 @@
+obj\Debug\net8.0\proto/SmsTest.cs \
+obj\Debug\net8.0\proto/SmsTestGrpc.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.76.0/build/native/include/google/protobuf/wrappers.proto\
+ proto/sms_test.proto

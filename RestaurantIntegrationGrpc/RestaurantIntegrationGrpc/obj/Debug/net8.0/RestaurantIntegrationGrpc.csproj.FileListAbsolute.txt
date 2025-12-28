@@ -1,0 +1,15 @@
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\bin\Debug\net8.0\RestaurantIntegrationGrpc.deps.json
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\bin\Debug\net8.0\RestaurantIntegrationGrpc.dll
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\bin\Debug\net8.0\RestaurantIntegrationGrpc.pdb
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.csproj.AssemblyReference.cache
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.GeneratedMSBuildEditorConfig.editorconfig
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.AssemblyInfoInputs.cache
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.AssemblyInfo.cs
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.csproj.CoreCompileInputs.cache
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.dll
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\refint\RestaurantIntegrationGrpc.dll
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\RestaurantIntegrationGrpc.pdb
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\ref\RestaurantIntegrationGrpc.dll
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\bin\Debug\net8.0\RestaurantLibrary.dll
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\bin\Debug\net8.0\RestaurantLibrary.pdb
+D:\EmployeeTests\RestaurantApi\RestaurantIntegrationGrpc\obj\Debug\net8.0\Restaura.D5477A33.Up2Date
